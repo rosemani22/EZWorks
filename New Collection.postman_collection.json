@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "9927529c-e48b-4364-b548-82a7d0756389",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43164982"
+	},
+	"item": [
+		{
+			"name": "https://test.ezworks.ai/api/upload-get-url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://test.ezworks.ai/api/upload-get-url"
+			},
+			"response": []
+		}
+	]
+}
