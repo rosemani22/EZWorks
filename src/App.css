@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 40%;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-section,
+  .right-section {
+    max-width: 100%;
+  }
+}
+
+
+/*email-form.css*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.right-section {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Move Email Form to Bottom */
+  .email-form {
+    order: 1;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-form input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .email-form button {
+    width: 50%;
+  }
+}
